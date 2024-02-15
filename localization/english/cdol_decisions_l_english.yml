@@ -39,3 +39,13 @@
  cdol_become_succubus_decision_desc: "The legends speak of a race of temptresses who can enchant and manipulate mortals. In my initiation into the mysteries of the universe, I have learned how to transform myself into a full-blooded [ROOT.Char.Custom('CdolSuccubusName')] of legend."
  cdol_become_succubus_decision_tooltip: "Use the forbidden arts to transform yourself into a [ROOT.Char.Custom('CdolSuccubusNameGameConcept')|U]"
  cdol_become_succubus_decision_confirm: "Begin the ritual"
+
+ cdol_become_succubus_gamerule_decision: "Perform [ROOT.Char.Custom('CdolSuccubusName')|U] Transformation Ritual"
+ cdol_become_succubus_gamerule_decision_desc: "The legends speak of a race of temptresses who can enchant and manipulate mortals. In my initiation into the mysteries of the universe, I have learned how to transform myself into a full-blooded [ROOT.Char.Custom('CdolSuccubusName')] of legend."
+ cdol_become_succubus_gamerule_decision_tooltip: "Use the forbidden arts to transform yourself into a [ROOT.Char.Custom('CdolSuccubusNameGameConcept')|U]"
+ cdol_become_succubus_gamerule_decision_confirm: "Begin the ritual"
+
+ cdol_fix_succubus_initialization_decision: "Fix your inner succubus"
+ cdol_fix_succubus_initialization_decision_desc: "Your inner succubus was not fully awaken. Do you dare to do it now?"
+ cdol_fix_succubus_initialization_decision_tooltip: "Resets your inner self to become succubus which you always wanted to be"
+ cdol_fix_succubus_initialization_decision_confirm: "Fix me"

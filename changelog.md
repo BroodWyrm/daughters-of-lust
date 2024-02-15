@@ -1,3 +1,10 @@
+# Daughters of Lust 0.5.5
+
+## Features
+
+* Updated to support Version 1.11.*
+* Added new interactions: drain prisoner and turn into lover
+
 # Daughters of Lust 0.5.1
 
 ## Localization

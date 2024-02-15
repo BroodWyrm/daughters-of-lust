@@ -7,6 +7,9 @@
  cdol_drain_life_interaction_desc: "Use [cdol_sexual_power|E] to secretly drain [recipient.GetShortUINamePossessiveNoTooltip] [health|E]"
  cdol_drain_life_interaction_notification: "[actor.Custom2('CdolDrainLifeFlavor', recipient)]"
 
+ cdol_drain_prisoner_interaction: "Drain Prisoner"
+ cdol_drain_prisoner_interaction_desc: "Drain [cdol_sexual_power|E] from imprisoned [recipient.GetShortUINamePossessiveNoTooltip]"
+
  cdol_fascinate_interaction: "Fascinate"
  cdol_fascinate_interaction_desc: "Use [cdol_sexual_power|E] to improve [recipient.GetShortUINamePossessiveNoTooltip] [opinion|E] of you"
  cdol_fascinate_interaction_notification: "[actor.Custom2('CdolFascinateFlavor', recipient)]"
@@ -26,6 +29,10 @@
  actor_secondary_cdol_incite_rivalry_interaction: "Rivals"
  cdol_incite_rivalry_interaction_set_relation_nemesis: "Become nemeses"
  cdol_incite_rivalry_interaction_set_relation_nemesis_desc: "Make two targets become nemeses"
+
+cdol_turn_into_lover_interaction: "Turn Into Lover"
+cdol_turn_into_lover_interaction_desc: "Use [cdol_sexual_power|E] to turn [recipient.GetShortUINamePossessiveNoTooltip] into your lover."
+cdol_turn_into_lover_interaction_notification: "[actor.Custom2('CdolTurnIntoLoverFlavor', recipient)]"
 
  cdol_succubus_conversion_interaction: "[ACTOR.Custom('CdolSuccubusName')|U] Conversion"
  cdol_succubus_conversion_interaction_desc: "Use [cdol_sexual_power|E] to transform [recipient.GetShortUINameNoTooltip] into a [cdol_succubus|E]"

@@ -10,6 +10,7 @@ carn_on_sex = {
 		cdol_sex_pulse
 	}
 }
+
 cdol_sex_pulse = {
 	effect = {
 		debug_log = "cdol on sex pulse"

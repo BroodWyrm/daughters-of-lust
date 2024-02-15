@@ -33,6 +33,12 @@ cdol_incite_rivalry_succubus_mastery_level = 40
 cdol_incite_rivalry_sexual_power_cost = 60
 cdol_incite_rivalry_cooldown_years = 1
 
+cdol_drain_prisoner_succubus_mastery_level = 50
+cdol_drain_prisoner_cooldown_years = 1
+
+cdol_turn_into_lover_succubus_mastery_level = 80
+cdol_turn_into_lover_sexual_power_cost = 60
+
 cdol_succubus_conversion_succubus_mastery_level = 100
 
 cdol_on_drain_milk_production_increase = 50

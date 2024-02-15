@@ -27,6 +27,9 @@ game_concept_cdol_regenerate_decision_desc: "A [cdol_succubus|E] with a [cdol_su
 game_concept_cdol_sexual_power: "Sexual Power"
 game_concept_cdol_sexual_power_desc: "Sexual Power is used by [cdol_succubi|E] to fuel their abilities. It is absorbed through sex and may be spent on powerful [decisions|E] and [interactions|E] which are unlocked through [cdol_succubus_mastery|E].\n\nFrequently using Sexual Power may arouse [cdol_suspicion|E]."
 
+game_concept_cdol_turn_into_lover_interaction: "$cdol_turn_into_lover_interaction$"
+game_concept_cdol_turn_into_lover_interaction_desc: "A [cdol_succubus|E] with a [cdol_succubus_mastery_level|E] of [EmptyScope.ScriptValue('cdol_turn_into_lover_succubus_mastery_level')|0] can use this [character_interaction|E] to turn a [character|E] into her lover."
+
 game_concept_cdol_succubus: "Succubus"
 game_concept_cdol_succubi: "Succubi"
 game_concept_cdol_yakshi: "$cdol_yakshi_cap$"

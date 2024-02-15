@@ -2,6 +2,7 @@
 	custom_description = {
 		text = "cdol_has_sexual_power_trigger_text"
 		value = $VALUE$
+		has_variable = cdol_sexual_power
 		var:cdol_sexual_power >= $VALUE$
 	}
 }

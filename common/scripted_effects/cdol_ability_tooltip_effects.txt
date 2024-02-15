@@ -58,10 +58,26 @@
 	if = {
 		limit = {
 			cdol_succubus_mastery_equals_trigger = {
+				VALUE = cdol_drain_prisoner_succubus_mastery_level
+			}
+		}
+		custom_tooltip = cdol_drain_prisoner_unlocked_tooltip
+	}
+	if = {
+		limit = {
+			cdol_succubus_mastery_equals_trigger = {
 				VALUE = cdol_incite_rivalry_succubus_mastery_level
 			}
 		}
 		custom_tooltip = cdol_incite_rivalry_unlocked_tooltip
+	}
+	if = {
+		limit = {
+			cdol_succubus_mastery_equals_trigger = {
+				VALUE = cdol_turn_into_lover_succubus_mastery_level
+			}
+		}
+		custom_tooltip = cdol_turn_into_lover_unlocked_tooltip
 	}
 	if = {
 		limit = {
@@ -133,10 +149,26 @@ cdol_unlocked_abilities_tooltip_effect = {
 	if = {
 		limit = {
 			cdol_has_succubus_mastery_trigger = {
+				VALUE = cdol_drain_prisoner_succubus_mastery_level
+			}
+		}
+		custom_tooltip = cdol_drain_prisoner_list_tooltip
+	}
+	if = {
+		limit = {
+			cdol_has_succubus_mastery_trigger = {
 				VALUE = cdol_incite_rivalry_succubus_mastery_level
 			}
 		}
 		custom_tooltip = cdol_incite_rivalry_list_tooltip
+	}
+	if = {
+		limit = {
+			cdol_has_succubus_mastery_trigger = {
+				VALUE = cdol_turn_into_lover_succubus_mastery_level
+			}
+		}
+		custom_tooltip = cdol_turn_into_lover_list_tooltip
 	}
 	if = {
 		limit = {

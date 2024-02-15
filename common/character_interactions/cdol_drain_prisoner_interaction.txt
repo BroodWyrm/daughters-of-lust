@@ -1,0 +1,63 @@
+cdol_drain_prisoner_interaction = {
+	category = interaction_category_hostile
+	interface_priority = 10
+	common_interaction = yes
+
+	desc = cdol_drain_prisoner_interaction_desc
+	
+	cooldown_against_recipient = { years = cdol_drain_prisoner_cooldown_years }
+
+	is_shown = {
+		scope:actor = {
+			cdol_has_succubus_powers_trigger = yes
+			cdol_has_succubus_mastery_trigger = {
+				VALUE = cdol_drain_prisoner_succubus_mastery_level
+			}
+		}
+		scope:recipient = {
+			is_absolute_adult = yes
+			is_imprisoned_by = scope:actor
+
+			# cdol_recent_succubus_sex_partner_is_recipient_trigger = yes
+			cdol_has_succubus_powers_trigger = no
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			cdol_has_succubus_powers_trigger = yes
+			cdol_has_succubus_mastery_trigger = {
+				VALUE = cdol_drain_prisoner_succubus_mastery_level
+			}
+			# cdol_recent_succubus_sex_partner_is_recipient_trigger = yes
+			# cdol_has_sexual_power_trigger = {
+			# 	VALUE = cdol_turn_into_lover_sexual_power_cost
+			# }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			scope:recipient = { save_scope_as = carn_sex_partner }
+            trigger_event = {
+                on_action = cdol_sex_pulse
+            }
+
+			# send_interface_toast = {
+			# 	title = cdol_turn_into_lover_interaction_notification
+			# 	left_icon = scope:actor
+			# 	right_icon = scope:recipient
+			# 	set_relation_lover = {
+			# 		target = scope:recipient
+			# 	}
+			# 	reverse_add_opinion = {
+			# 		modifier = cdol_fascinated_opinion
+			# 		target = scope:recipient
+			# 	}
+			# }
+			cdol_add_suspicion_effect = yes
+		}
+	}
+
+	auto_accept = yes
+}
