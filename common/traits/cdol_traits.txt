@@ -2,6 +2,7 @@
 
 cdol_succubus = {
 	index = 6600
+	
 	minimum_age = 16
 
 	attraction_opinion = 10

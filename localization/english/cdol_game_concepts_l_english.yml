@@ -15,6 +15,9 @@ game_concept_cdol_become_succubus_decision_desc: "A female [GetTrait('witch').Ge
 game_concept_cdol_drain_life_interaction: "$cdol_drain_life_interaction$"
 game_concept_cdol_drain_life_interaction_desc: "A [cdol_succubus|E] with a [cdol_succubus_mastery_level|E] of [EmptyScope.ScriptValue('cdol_drain_life_succubus_mastery_level')|0] can use this [character_interaction|E] to inflict a severe [health|E] penalty on a [character|E] she has laid with in the past 30 days."
 
+game_concept_cdol_drain_prisoner_interaction: "$cdol_drain_prisoner_interaction$"
+game_concept_cdol_drain_prisoner_interaction_desc: "A [cdol_succubus|E] with a [cdol_succubus_mastery_level|E] of [EmptyScope.ScriptValue('cdol_drain_prisoner_succubus_mastery_level')|0] can use this [character_interaction|E] to inflict a severe [health|E] penalty on a [character|E] in prison."
+
 game_concept_cdol_fascinate_interaction: "$cdol_fascinate_interaction$"
 game_concept_cdol_fascinate_interaction_desc: "A [cdol_succubus|E] with a [cdol_succubus_mastery_level|E] of [EmptyScope.ScriptValue('cdol_fascinate_succubus_mastery_level')|0] can use this [character_interaction|E] to increase another [character_possessive|E] [opinion|E] of her."
 
