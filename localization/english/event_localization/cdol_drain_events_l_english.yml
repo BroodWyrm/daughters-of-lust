@@ -3,39 +3,39 @@
  cdol_drain.0001.notification: "[succubus.Custom('CdolSuccubusName')|U]: Sexual Power Absorbed"
 
  cdol_drain.generic_title: "[succubus.Custom('CdolSuccubusName')|U]: The Hunger"
- cdol_drain.generic_opening: "As [carn_sex_partner.GetShortUINameNoTooltip] shudders in ecstasy, electric pleasure washes over me and I feel [carn_sex_partner.GetHerHis] strength flowing into my body.\n\n"
+ cdol_drain.generic_opening: "As [cdol_sex_partner.GetShortUINameNoTooltip] shudders in ecstasy, electric pleasure washes over me and I feel [cdol_sex_partner.GetHerHis] strength flowing into my body.\n\n"
 
- cdol_drain.generic_refusal: "No, [carn_sex_partner.GetShortUINameNoTooltip] deserves better."
+ cdol_drain.generic_refusal: "No, [cdol_sex_partner.GetShortUINameNoTooltip] deserves better."
  cdol_drain.difficult_refusal: "I... I must resist!"
 
- cdol_drain.0010.ending: "The poetry of [carn_sex_partner.GetHerHis] soul sings to me, waiting to be drawn into my lips with a kiss."
+ cdol_drain.0010.ending: "The poetry of [cdol_sex_partner.GetHerHis] soul sings to me, waiting to be drawn into my lips with a kiss."
  cdol_drain.0010.a: "You shall be kindling for my grace."
 
- cdol_drain.0020.ending: "I can feel the fire of [carn_sex_partner.GetHerHis] conviction on the cusp of setting me alight."
+ cdol_drain.0020.ending: "I can feel the fire of [cdol_sex_partner.GetHerHis] conviction on the cusp of setting me alight."
  cdol_drain.0020.a: "As you have conquered, so shall I conquer you."
 
- cdol_drain.0030.ending: "Orgasm by orgasm, [carn_sex_partner.GetHerHis] caution and reason give way to the heat of raw desire."
+ cdol_drain.0030.ending: "Orgasm by orgasm, [cdol_sex_partner.GetHerHis] caution and reason give way to the heat of raw desire."
  cdol_drain.0030.a: "Your designs shall become part of me."
 
- cdol_drain.0040.ending: "[carn_sex_partner.GetSheHe|U] gazes into my eyes, completely smitten, and the windows of [carn_sex_partner.GetHerHis] soul are open to me."
+ cdol_drain.0040.ending: "[cdol_sex_partner.GetSheHe|U] gazes into my eyes, completely smitten, and the windows of [cdol_sex_partner.GetHerHis] soul are open to me."
  cdol_drain.0040.a: "Let us become one in the dark."
 
- cdol_drain.0050.ending: "[carn_sex_partner.GetHerHis|U] thoughts and worries melt away as [carn_sex_partner.GetSheHe] surrenders [carn_sex_partner.GetHerselfHimself] to my intoxicating form."
+ cdol_drain.0050.ending: "[cdol_sex_partner.GetHerHis|U] thoughts and worries melt away as [cdol_sex_partner.GetSheHe] surrenders [cdol_sex_partner.GetHerselfHimself] to my intoxicating form."
  cdol_drain.0050.a: "Forget it all and lie with me..."
 
- cdol_drain.0060.ending: "I can feel the raw power and art of [carn_sex_partner.GetHerHis] form filling me like the rays of the sun."
+ cdol_drain.0060.ending: "I can feel the raw power and art of [cdol_sex_partner.GetHerHis] form filling me like the rays of the sun."
  cdol_drain.0060.a: "Your strength shall be my strength."
 
- cdol_drain.0070.ending: "I writhe in orgasm as I feel [carn_sex_partner.GetHerHis] sweetness, [carn_sex_partner.GetHerHis] magnificence, caressing my skin and burning into my soul."
+ cdol_drain.0070.ending: "I writhe in orgasm as I feel [cdol_sex_partner.GetHerHis] sweetness, [cdol_sex_partner.GetHerHis] magnificence, caressing my skin and burning into my soul."
  cdol_drain.0070.a: "Complete me! Make me perfect!"
 
  cdol_drain.0080.ending: "We orgasm as one, our minds and experiences blossoming into a universe of pleasure, a mind-melting climax that stretches into infinity..."
  cdol_drain.0080.a: "I see everything, everything...!"
 
- cdol_drain.0090.ending: "[carn_sex_partner.GetHerHis|U] every touch sets my skin alight, flooding my bosom and loins with an unimaginably pleasurable fire."
+ cdol_drain.0090.ending: "[cdol_sex_partner.GetHerHis|U] every touch sets my skin alight, flooding my bosom and loins with an unimaginably pleasurable fire."
  cdol_drain.0090.a: "Yes! Fill me up... Make me whole!"
 
- cdol_drain.0100.ending: "I can feel [carn_sex_partner.GetHerHis] intoxicating passion and vitality, melting deliciously into my lips as we embrace."
+ cdol_drain.0100.ending: "I can feel [cdol_sex_partner.GetHerHis] intoxicating passion and vitality, melting deliciously into my lips as we embrace."
  cdol_drain.0100.a: "You shall be a moth to my flame."
 
 

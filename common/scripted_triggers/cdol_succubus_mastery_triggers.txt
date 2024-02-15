@@ -2,12 +2,19 @@
 	custom_description = {
 		text = "cdol_has_succubus_mastery_trigger_text"
 		value = $VALUE$
-		has_variable = cdol_succubus_mastery_level
-		var:cdol_succubus_mastery_level >= $VALUE$
+
+		has_trait = cdol_succubus
+		has_trait_xp = {
+			trait = cdol_succubus
+			value >= $VALUE$
+		}
 	}
 }
 
 cdol_succubus_mastery_equals_trigger = {
-	has_variable = cdol_succubus_mastery_level
-	var:cdol_succubus_mastery_level = $VALUE$
+	has_trait = cdol_succubus
+	has_trait_xp = {
+		trait = cdol_succubus
+		value = $VALUE$
+    }
 }

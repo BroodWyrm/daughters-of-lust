@@ -1,3 +1,11 @@
+# Daughters of Lust 0.6.0
+
+## Features
+
+* Remove dependence on Carnalitas
+* Cleanup
+* integration into mod sdII
+
 # Daughters of Lust 0.5.5
 
 ## Features

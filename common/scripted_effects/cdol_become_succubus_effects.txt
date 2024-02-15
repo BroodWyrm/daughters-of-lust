@@ -1,17 +1,17 @@
 ﻿cdol_become_succubus_effect = {
-	if = {
-		limit = {
-			NOT = { has_trait = lustful }
-		}
-		carn_create_personality_replacement_effect = { NEW_TRAIT = lustful }
-		carn_resolve_personality_replacement_effect = yes
-	}
+	# if = {
+	# 	limit = {
+	# 		NOT = { has_trait = lustful }
+	# 	}
+	# 	# carn_create_personality_replacement_effect = { NEW_TRAIT = lustful }
+	# 	# carn_resolve_personality_replacement_effect = yes
+	# }
 	if = {
 		limit = { NOT = { has_sexuality = bisexual } }
 		set_sexuality = bisexual
 	}
-	carn_recover_from_all_diseases_effect = yes
-	carn_remove_all_negative_congenital_traits_effect = yes
+	cdol_recover_from_all_diseases_effect = yes
+	cdol_remove_all_negative_congenital_traits_effect = yes
 	
 	cdol_basic_become_succubus_effect = yes
 }
@@ -27,8 +27,8 @@ cdol_become_succubus_tooltip_effect = {
 		limit = { NOT = { has_sexuality = bisexual } }
 		set_sexuality = bisexual
 	}
-	carn_recover_from_all_diseases_effect = yes
-	carn_remove_all_negative_congenital_traits_effect = yes
+	cdol_recover_from_all_diseases_effect = yes
+	cdol_remove_all_negative_congenital_traits_effect = yes
 	cdol_give_succubus_secret_or_trait_effect = yes
 }
 
@@ -37,18 +37,13 @@ cdol_basic_become_succubus_effect = {
 	cdol_give_succubus_secret_or_trait_effect = yes
 	hidden_effect = {
 		add_character_flag = immune_to_disease
-		add_character_flag = carn_no_pregnancy_complications
-		add_character_flag = carn_lactation_ignores_effective_age
+		# add_character_flag = carn_no_pregnancy_complications
 		set_variable = {
 			name = my_quirk
 			value = flag:lustful
 		}
 		set_variable = {
 			name = cdol_sexual_power
-			value = 0
-		}
-		set_variable = {
-			name = cdol_succubus_mastery_level
 			value = 0
 		}
 		add_character_flag = cdol_succubus_initialized

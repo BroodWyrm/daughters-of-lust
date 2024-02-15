@@ -3,9 +3,9 @@
 cdol_drain.0001.notification:1 "[succubus.Custom('CdolSuccubusName')|U]: Puissance sexuelle absorbée"
 
 cdol_drain.generic_title:1 "[succubus.Custom('CdolSuccubusName')|U]: La Faim"
-cdol_drain.generic_opening:1 "Alors que [carn_sex_partner.GetShortUINameNoTooltip] frissonne d'extase, un plaisir électrique me submerge et je sens sa force se répandre dans mon corps.\n\n"
+cdol_drain.generic_opening:1 "Alors que [cdol_sex_partner.GetShortUINameNoTooltip] frissonne d'extase, un plaisir électrique me submerge et je sens sa force se répandre dans mon corps.\n\n"
 
-cdol_drain.generic_refusal:1 "Non, [carn_sex_partner.GetShortUINameNoTooltip] mérite mieux."
+cdol_drain.generic_refusal:1 "Non, [cdol_sex_partner.GetShortUINameNoTooltip] mérite mieux."
 cdol_drain.difficult_refusal:1 "Je... Je dois résister !"
 
 cdol_drain.0010.ending:1 "La poésie de son âme résonne en moi, attendant d'être amenée à mes lèvres par un baiser."
@@ -17,10 +17,10 @@ cdol_drain.0020.a:1 "Comme vous avez conquis, je vous conquerrai aussi."
 cdol_drain.0030.ending:1 "Orgasme après orgasme, sa prudence et sa raison cédent place à la chaleur du désir."
 cdol_drain.0030.a:1 "Vos idées seront miennes."
 
-cdol_drain.0040.ending:1 "son regard perdu dans mes yeux, complètement subjugué[carn_sex_partner.Custom('FR_E')], et les fenêtres de son âme me sont ouvertes."
+cdol_drain.0040.ending:1 "son regard perdu dans mes yeux, complètement subjugué[cdol_sex_partner.Custom('FR_E')], et les fenêtres de son âme me sont ouvertes."
 cdol_drain.0040.a:1 "Devenons un dans l'obscurité."
 
-cdol_drain.0050.ending:1 "Ses pensées et ses soucis se dissipent alors qu'[carn_sex_partner.GetSheHe] s'abandonne à ma forme enivrante."
+cdol_drain.0050.ending:1 "Ses pensées et ses soucis se dissipent alors qu'[cdol_sex_partner.GetSheHe] s'abandonne à ma forme enivrante."
 cdol_drain.0050.a:1 "Oubliez tout le reste et allongez-vous avec moi..."
 
 cdol_drain.0060.ending:1 "Je peux sentir la puissance absolue et la beauté de sa forme me remplir comme les rayons du soleil."

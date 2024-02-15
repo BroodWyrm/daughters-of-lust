@@ -3,39 +3,39 @@
  cdol_drain.0001.notification:1 "[succubus.Custom('CdolSuccubusName')|U]: 성마력 흡수"
 
  cdol_drain.generic_title:1 "[succubus.Custom('CdolSuccubusName')|U]: 갈망"
- cdol_drain.generic_opening:1 "[carn_sex_partner.GetShortUINameNoTooltip]의 몸이 황홀경에 떨 때, 열렬한 쾌락이 나를 휩쓸며 [carn_sex_partner.GetHerHis] 힘이 내 몸으로 흘러들어오는 것을 느낀다.\n\n"
+ cdol_drain.generic_opening:1 "[cdol_sex_partner.GetShortUINameNoTooltip]의 몸이 황홀경에 떨 때, 열렬한 쾌락이 나를 휩쓸며 [cdol_sex_partner.GetHerHis] 힘이 내 몸으로 흘러들어오는 것을 느낀다.\n\n"
 
- cdol_drain.generic_refusal:1 "아니, [carn_sex_partner.GetShortUINameNoTooltip]의 가치가 더 커."
+ cdol_drain.generic_refusal:1 "아니, [cdol_sex_partner.GetShortUINameNoTooltip]의 가치가 더 커."
  cdol_drain.difficult_refusal:1 "난... 견뎌야 해!"
 
- cdol_drain.0010.ending:1 "[carn_sex_partner.GetHerHis] 영혼의 시가 내게 노래하며, 키스로 내 입술이 감겨올 것을 기다린다."
+ cdol_drain.0010.ending:1 "[cdol_sex_partner.GetHerHis] 영혼의 시가 내게 노래하며, 키스로 내 입술이 감겨올 것을 기다린다."
  cdol_drain.0010.a:1 "너는 내 우아함을 위한 재료가 될 것이다."
 
- cdol_drain.0020.ending:1 "나를 흥분시킬 수 있다는 [carn_sex_partner.GetHerHis] 확신의 불꽃이 느껴진다."
+ cdol_drain.0020.ending:1 "나를 흥분시킬 수 있다는 [cdol_sex_partner.GetHerHis] 확신의 불꽃이 느껴진다."
  cdol_drain.0020.a:1 "네가 나를 정복한 것처럼, 나도 너를 정복할 것이다."
 
- cdol_drain.0030.ending:1 "절정 그리고 절정, [carn_sex_partner.GetHerHis] 경계심과 이성은 원초적인 욕망의 열기에 무너지고 만다."
+ cdol_drain.0030.ending:1 "절정 그리고 절정, [cdol_sex_partner.GetHerHis] 경계심과 이성은 원초적인 욕망의 열기에 무너지고 만다."
  cdol_drain.0030.a:1 "너는 내 일부가 될 것이야."
 
- cdol_drain.0040.ending:1 "[carn_sex_partner.GetSheHe|U]는 완전히 반한 눈으로 내 눈을 바라보고, [carn_sex_partner.GetHerHis] 영혼의 창 또한 내게 열렸다."
+ cdol_drain.0040.ending:1 "[cdol_sex_partner.GetSheHe|U]는 완전히 반한 눈으로 내 눈을 바라보고, [cdol_sex_partner.GetHerHis] 영혼의 창 또한 내게 열렸다."
  cdol_drain.0040.a:1 "어둠 속에서 하나가 되는 거야."
 
- cdol_drain.0050.ending:1 "나의 도취시키는 몸에 굴복하면서, [carn_sex_partner.GetSheHe]가 내 [carn_sex_partner.GetHerHis|U] 상념과 우려는 녹아 사라진다."
+ cdol_drain.0050.ending:1 "나의 도취시키는 몸에 굴복하면서, [cdol_sex_partner.GetSheHe]가 내 [cdol_sex_partner.GetHerHis|U] 상념과 우려는 녹아 사라진다."
  cdol_drain.0050.a:1 "다 잊어버리고 나를 안아..."
 
- cdol_drain.0060.ending:1 "태양의 빛처럼 나를 채우는 [carn_sex_partner.GetHerHis] 신체에서 원초적인 힘과 기교가 느껴진다."
+ cdol_drain.0060.ending:1 "태양의 빛처럼 나를 채우는 [cdol_sex_partner.GetHerHis] 신체에서 원초적인 힘과 기교가 느껴진다."
  cdol_drain.0060.a:1 "너의 힘이 곧 내 힘이 될 것이다."
 
- cdol_drain.0070.ending:1 "내 살갗을 달콤하게 애무하고 내 영혼 안으로 장엄하게 타들어가는 [carn_sex_partner.GetHerHim]를 느끼며, 나는 오르가즘에 온몸을 비튼다."
+ cdol_drain.0070.ending:1 "내 살갗을 달콤하게 애무하고 내 영혼 안으로 장엄하게 타들어가는 [cdol_sex_partner.GetHerHim]를 느끼며, 나는 오르가즘에 온몸을 비튼다."
  cdol_drain.0070.a:1 "채워 줘! 나를 완성시켜 줘!"
 
  cdol_drain.0080.ending:1 "하나가 되어 절정하며, 우리의 정신은 쾌락의 우주에 녹아들듯이 꽃피어 무한으로 뻗어나간다..."
  cdol_drain.0080.a:1 "보여... 모든 것이...!"
 
- cdol_drain.0090.ending:1 "[carn_sex_partner.GetHerHis|U] 손길 하나하나가 내 몸을 불타게 만들고, 상상도 못할 쾌락의 불길이 내 가슴과 국부에 몰아친다."
+ cdol_drain.0090.ending:1 "[cdol_sex_partner.GetHerHis|U] 손길 하나하나가 내 몸을 불타게 만들고, 상상도 못할 쾌락의 불길이 내 가슴과 국부에 몰아친다."
  cdol_drain.0090.a:1 "그래! 채워 줘... 온 몸을 다!"
 
- cdol_drain.0100.ending:1 "우리는 서로를 껴안고, 나는 [carn_sex_partner.GetHerHis] 열정과 생명력이 내 입술에 맛있게 녹아드는 것을 느낀다."
+ cdol_drain.0100.ending:1 "우리는 서로를 껴안고, 나는 [cdol_sex_partner.GetHerHis] 열정과 생명력이 내 입술에 맛있게 녹아드는 것을 느낀다."
  cdol_drain.0100.a:1 "당신은 내 불꽃 앞의 나방이야."
 
 

@@ -5,7 +5,7 @@
 	}
 }
 
-carn_on_sex = {
+cdol_on_sex = {
 	on_actions = {
 		cdol_sex_pulse
 	}

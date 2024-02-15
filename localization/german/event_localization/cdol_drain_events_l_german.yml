@@ -3,39 +3,39 @@
 cdol_drain.0001.notification:1 "[succubus.Custom('CdolSuccubusName')|U]: Absorbierte sexuelle Kraft"
 
 cdol_drain.generic_title:1 "[succubus.Custom('CdolSuccubusName')|U]: Der Hunger"
-cdol_drain.generic_opening:1 "Als [carn_sex_partner.GetShortUINameNoTooltip] von Ekstase geschüttelt wird, überflutet mich elektrifizierendes Vergnügen und ich fühle, wie [Select_CString( carn_sex_partner.isFemale, 'ihre', 'seine' )] Kraft in meinen Körper fließt.\n\n"
+cdol_drain.generic_opening:1 "Als [cdol_sex_partner.GetShortUINameNoTooltip] von Ekstase geschüttelt wird, überflutet mich elektrifizierendes Vergnügen und ich fühle, wie [Select_CString( cdol_sex_partner.isFemale, 'ihre', 'seine' )] Kraft in meinen Körper fließt.\n\n"
 
-cdol_drain.generic_refusal:1 "Nein, [carn_sex_partner.GetShortUINameNoTooltip] verdient Besseres."
+cdol_drain.generic_refusal:1 "Nein, [cdol_sex_partner.GetShortUINameNoTooltip] verdient Besseres."
 cdol_drain.difficult_refusal:1 "Ich ... ich muss widerstehen!"
 
-cdol_drain.0010.ending:1 "Die Poesie [Select_CString( carn_sex_partner.isFemale, 'ihrer', 'seiner' )] Seele singt für mich und wartet darauf, mit einem Kuss meiner Lippen aufgesogen zu werden."
+cdol_drain.0010.ending:1 "Die Poesie [Select_CString( cdol_sex_partner.isFemale, 'ihrer', 'seiner' )] Seele singt für mich und wartet darauf, mit einem Kuss meiner Lippen aufgesogen zu werden."
 cdol_drain.0010.a:1 "Du solltest für meine Gnade dankbar sein."
 
-cdol_drain.0020.ending:1 "Ich kann das Feuer [Select_CString( carn_sex_partner.isFemale, 'ihrer', 'seiner' )] Überzeugung an der Schwelle spüren, mich in Brand zu setzen."
+cdol_drain.0020.ending:1 "Ich kann das Feuer [Select_CString( cdol_sex_partner.isFemale, 'ihrer', 'seiner' )] Überzeugung an der Schwelle spüren, mich in Brand zu setzen."
 cdol_drain.0020.a:1 "Wie du mich erobert hast, werde ich dich erobern."
 
-cdol_drain.0030.ending:1 "Orgasmus um Orgasmus weichen [Select_CString( carn_sex_partner.isFemale, 'ihre', 'seine' )] Vorsicht und Vernunft der Hitze des rohen Verlangens."
+cdol_drain.0030.ending:1 "Orgasmus um Orgasmus weichen [Select_CString( cdol_sex_partner.isFemale, 'ihre', 'seine' )] Vorsicht und Vernunft der Hitze des rohen Verlangens."
 cdol_drain.0030.a:1 "Deine Entwicklung soll ein Teil von mir werden"
 
-cdol_drain.0040.ending:1 "[carn_sex_partner.GetSheHe|U] schaut mir in die Augen, völlig hingerissen, und die Fenster zu [Select_CString( carn_sex_partner.isFemale, 'ihrer', 'seiner' )] Soul stehen mir offen."
+cdol_drain.0040.ending:1 "[cdol_sex_partner.GetSheHe|U] schaut mir in die Augen, völlig hingerissen, und die Fenster zu [Select_CString( cdol_sex_partner.isFemale, 'ihrer', 'seiner' )] Soul stehen mir offen."
 cdol_drain.0040.a:1 "Lass uns eins im Dunkeln werden."
 
-cdol_drain.0050.ending:1 "[Select_CString( carn_sex_partner.isFemale, 'Ihre', 'Seine' )] Gedanken und Sorgen schmelzen dahin, während [carn_sex_partner.GetSheHe] sich meiner berauschenden Gestalt hingibt."
+cdol_drain.0050.ending:1 "[Select_CString( cdol_sex_partner.isFemale, 'Ihre', 'Seine' )] Gedanken und Sorgen schmelzen dahin, während [cdol_sex_partner.GetSheHe] sich meiner berauschenden Gestalt hingibt."
 cdol_drain.0050.a:1 "Vergiss alles und schlafe mit mir ..."
 
-cdol_drain.0060.ending:1 "Ich kann die rohe Kraft und [Select_CString( carn_sex_partner.isFemale, 'ihre', 'seine' )] Fähigkeiten spüren, die mich wie die Strahlen der Sonne erfüllen."
+cdol_drain.0060.ending:1 "Ich kann die rohe Kraft und [Select_CString( cdol_sex_partner.isFemale, 'ihre', 'seine' )] Fähigkeiten spüren, die mich wie die Strahlen der Sonne erfüllen."
 cdol_drain.0060.a:1 "Deine Stärke soll meine Stärke sein."
 
-cdol_drain.0070.ending:1 "Ich winde mich im Orgasmus, während ich [Select_CString( carn_sex_partner.isFemale, 'ihre', 'seine' )] Süße fühle, [Select_CString( die.isFemale, 'ihre', 'seine' )] Großartigkeit, die meine Haut streichelt und sich in meine Seele einbrennt."
+cdol_drain.0070.ending:1 "Ich winde mich im Orgasmus, während ich [Select_CString( cdol_sex_partner.isFemale, 'ihre', 'seine' )] Süße fühle, [Select_CString( die.isFemale, 'ihre', 'seine' )] Großartigkeit, die meine Haut streichelt und sich in meine Seele einbrennt."
 cdol_drain.0070.a:1 "Vervollständige mich! Mache mich perfekt!"
 
 cdol_drain.0080.ending:1 "Wir gelangen als Einheit zum Orgasmus, unser Geist und unsere Erfahrungen erblühen zu einem Universum der Freude, einem den Geist schmelzenden Höhepunkt, der sich in die Unendlichkeit erstreckt ..."
 cdol_drain.0080.a:1 "Ich sehe alles, alles ...!"
 
-cdol_drain.0090.ending:1 "Jede [Select_CString( carn_sex_partner.isFemale, 'ihrer', 'seiner' )] Berührungen setzt meine Haut in Brand und überflutet meinen Busen und meine Lenden mit einem unvorstellbar angenehmen Feuer."
+cdol_drain.0090.ending:1 "Jede [Select_CString( cdol_sex_partner.isFemale, 'ihrer', 'seiner' )] Berührungen setzt meine Haut in Brand und überflutet meinen Busen und meine Lenden mit einem unvorstellbar angenehmen Feuer."
 cdol_drain.0090.a:1 "Ja! Fülle mich auf ... Mach' mich wieder ganz!"
 
-cdol_drain.0100.ending:1 "Ich kann [Select_CString( carn_sex_partner.isFemale, 'ihre', 'seine' )] berauschende Leidenschaft und Vitalität spüren, die köstlich mit meinen Lippen verschmilzen, während wir uns umarmen."
+cdol_drain.0100.ending:1 "Ich kann [Select_CString( cdol_sex_partner.isFemale, 'ihre', 'seine' )] berauschende Leidenschaft und Vitalität spüren, die köstlich mit meinen Lippen verschmilzen, während wir uns umarmen."
 cdol_drain.0100.a:1 "Du sollst eine Motte um meine Flamme sein."
 
 

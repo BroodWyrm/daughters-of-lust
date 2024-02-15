@@ -21,8 +21,9 @@ cdol_debug.0002 = {
 			name = cdol_sexual_power
 			value = cdol_sexual_power_maximum
 		}
-		set_variable = {
-			name = cdol_succubus_mastery_level
+		add_trait_xp = {
+			trait = cdol_succubus
+			track = cdol_succubus
 			value = 100
 		}
 	}

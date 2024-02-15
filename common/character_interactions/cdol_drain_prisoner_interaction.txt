@@ -38,7 +38,7 @@ cdol_drain_prisoner_interaction = {
 
 	on_accept = {
 		scope:actor = {
-			scope:recipient = { save_scope_as = carn_sex_partner }
+			scope:recipient = { save_scope_as = cdol_sex_partner }
             trigger_event = {
                 on_action = cdol_sex_pulse
             }

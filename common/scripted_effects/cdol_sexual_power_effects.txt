@@ -1,6 +1,19 @@
 ﻿cdol_gain_sexual_power_effect = {
 	if = {
 		limit = {
+			NOT = {
+				has_variable = cdol_sexual_power
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				name = cdol_sexual_power
+				value = 0
+			}
+		}
+	}
+	if = {
+		limit = {
 			cdol_sexual_power_maximum < {
 				value = var:cdol_sexual_power
 				add = $VALUE$
@@ -27,6 +40,19 @@
 }
 
 cdol_lose_sexual_power_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_variable = cdol_sexual_power
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				name = cdol_sexual_power
+				value = 0
+			}
+		}
+	}
 	if = {
 		limit = {
 			0 > {

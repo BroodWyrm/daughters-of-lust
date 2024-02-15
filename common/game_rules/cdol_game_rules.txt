@@ -3,9 +3,3 @@
 	cdol_start_scenario_none = {}
 	cdol_start_scenario_succubus = {}
 }
-
-cdol_succubus_lactation = {
-	default = cdol_succubus_lactation_enabled
-	cdol_succubus_lactation_disabled = {}
-	cdol_succubus_lactation_enabled = {}
-}

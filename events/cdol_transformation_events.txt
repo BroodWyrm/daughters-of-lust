@@ -31,7 +31,7 @@ cdol_transformation.0001 = {
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 		if = {
 			limit = { is_ai = no }
-			carn_undress_character_effect = yes
+			cdol_undress_character_effect = yes
 		}
 		cdol_become_succubus_effect = yes
 	}
@@ -41,7 +41,7 @@ cdol_transformation.0001 = {
 	}
 
 	after = {
-		carn_dress_character_effect = yes
+		cdol_dress_character_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }

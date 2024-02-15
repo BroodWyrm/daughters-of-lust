@@ -1,0 +1,15 @@
+﻿had_sex_with_effect = {
+	save_temporary_scope_as = cdol_had_sex_with_effect_character
+	para_had_sex_with_effect = {
+		CHARACTER = $CHARACTER$
+		PREGNANCY_CHANCE = $PREGNANCY_CHANCE$
+	}
+
+	# hook into new on_action
+	scope:cdol_had_sex_with_effect_character = {
+		$CHARACTER$ = { save_scope_as = cdol_sex_partner }
+		trigger_event = {
+			on_action = cdol_on_sex
+		}
+	}
+}

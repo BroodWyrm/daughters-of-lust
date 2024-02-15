@@ -1,10 +1,10 @@
-version="0.5.2"
+version="0.6.0"
 tags={
 	"Character Interactions"
 	"Decisions"
 	"Events"
 	"Gameplay"
 }
-name="Lazy's Daughters of Lust"
-supported_version="1.9.*"
+name="Sappho's Daughter II Chapter: Daughters of Lust"
+supported_version="1.11.*"
 path="mod/daughters-of-lust"

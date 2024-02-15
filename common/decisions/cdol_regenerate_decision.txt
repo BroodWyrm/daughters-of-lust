@@ -22,9 +22,9 @@
 			text = "cdol_can_regenerate_trigger"
 			OR = {
 				has_trait = wounded
-				carn_has_any_disease_trigger = yes
-				carn_has_any_major_disfigurement_trigger = yes
-				carn_has_any_minor_disfigurement_trigger = yes
+				cdol_has_any_disease_trigger = yes
+				cdol_has_any_major_disfigurement_trigger = yes
+				cdol_has_any_minor_disfigurement_trigger = yes
 			}
 		}
     }
@@ -40,40 +40,40 @@
 			send_interface_toast = {
 				title = cdol_regenerate_decision_notification
 				left_icon = root
-				carn_heal_wounds_one_step_effect = yes
+				cdol_heal_wounds_one_step_effect = yes
 			}
 			cdol_add_suspicion_effect = yes
 		}
 		else_if = {
 			limit = {
-				carn_has_any_disease_trigger = yes
+				cdol_has_any_disease_trigger = yes
 			}
 			send_interface_toast = {
 				title = cdol_regenerate_decision_notification
 				left_icon = root
-				carn_recover_from_all_diseases_effect = yes
+				cdol_recover_from_all_diseases_effect = yes
 			}
 			cdol_add_suspicion_effect = yes
 		}
 		else_if = {
 			limit = {
-				carn_has_any_major_disfigurement_trigger = yes
+				cdol_has_any_major_disfigurement_trigger = yes
 			}
 			send_interface_toast = {
 				title = cdol_regenerate_decision_notification
 				left_icon = root
-				carn_remove_random_major_disfigurement_effect = yes
+				cdol_remove_random_major_disfigurement_effect = yes
 			}
 			cdol_add_heavy_suspicion_effect = yes
 		}
 		else_if = {
 			limit = {
-				carn_has_any_minor_disfigurement_trigger = yes
+				cdol_has_any_minor_disfigurement_trigger = yes
 			}
 			send_interface_toast = {
 				title = cdol_regenerate_decision_notification
 				left_icon = root
-				carn_remove_random_minor_disfigurement_effect = yes
+				cdol_remove_random_minor_disfigurement_effect = yes
 			}
 			cdol_add_heavy_suspicion_effect = yes
 		}

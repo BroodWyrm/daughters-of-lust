@@ -1,0 +1,7 @@
+cdol_add_one_succubus_trait_xp_level_effect = {
+	add_trait_xp = {
+		trait = cdol_succubus
+		track = cdol_succubus
+		value = 1
+	}
+}

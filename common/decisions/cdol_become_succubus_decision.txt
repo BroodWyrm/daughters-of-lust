@@ -9,6 +9,7 @@
 
 	is_shown = {
 		is_female = yes
+		sd_has_awakened_trigger = yes
 		cdol_is_succubus_trigger = no
 		cdol_has_succubus_ancestry_trigger = no
 		OR = {
@@ -20,6 +21,7 @@
 	is_valid = {
 		is_female = yes
 		is_adult = yes
+		sd_has_awakened_trigger = yes
 		custom_description = {
 			text = cdol_is_witch_trigger
 			OR = {
@@ -51,42 +53,42 @@
 	}
 }
 
-cdol_become_succubus_gamerule_decision = {
-	ai_check_interval = 0
-	major = yes
-	picture = "gfx/interface/illustrations/decisions/decision_cdol_become_succubus.dds"
+# cdol_become_succubus_gamerule_decision = {
+# 	ai_check_interval = 0
+# 	major = yes
+# 	picture = "gfx/interface/illustrations/decisions/decision_cdol_become_succubus.dds"
 
-	desc = cdol_become_succubus_gamerule_decision_desc
+# 	desc = cdol_become_succubus_gamerule_decision_desc
 
-	selection_tooltip = cdol_become_succubus_gamerule_decision_tooltip
+# 	selection_tooltip = cdol_become_succubus_gamerule_decision_tooltip
 
-	is_shown = {
-		is_female = yes
-		cdol_is_succubus_trigger = no
-		cdol_has_succubus_ancestry_trigger = no
-		has_game_rule = cdol_start_scenario_succubus
-	}
+# 	is_shown = {
+# 		is_female = yes
+# 		cdol_is_succubus_trigger = no
+# 		cdol_has_succubus_ancestry_trigger = no
+# 		has_game_rule = cdol_start_scenario_succubus
+# 	}
 
-	is_valid = {
-		is_female = yes
-		is_adult = yes
-		has_game_rule = cdol_start_scenario_succubus
-	}
+# 	is_valid = {
+# 		is_female = yes
+# 		is_adult = yes
+# 		has_game_rule = cdol_start_scenario_succubus
+# 	}
 
-	effect = {
-		show_as_tooltip = {
-			cdol_become_succubus_tooltip_effect = yes
-		}
-		trigger_event = {
-			id = cdol_transformation.0001
-		}
-	}
+# 	effect = {
+# 		show_as_tooltip = {
+# 			cdol_become_succubus_tooltip_effect = yes
+# 		}
+# 		trigger_event = {
+# 			id = cdol_transformation.0001
+# 		}
+# 	}
 
-	ai_potential = {
-		always = no
-	}
+# 	ai_potential = {
+# 		always = no
+# 	}
 
-	ai_will_do = {
-		base = 0
-	}
-}
+# 	ai_will_do = {
+# 		base = 0
+# 	}
+# }

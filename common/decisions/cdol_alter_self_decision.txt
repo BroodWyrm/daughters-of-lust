@@ -24,7 +24,7 @@
 		custom_tooltip = cdol_alter_self_decision_effect_tooltip
 		if = {
 			limit = { is_ai = no }
-			carn_undress_character_effect = yes
+			cdol_undress_character_effect = yes
 		}
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 		trigger_event = { id = cdol_ability.0200 }

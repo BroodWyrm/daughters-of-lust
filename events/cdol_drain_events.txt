@@ -21,7 +21,7 @@ cdol_drain.0001 = {
 
 	trigger = {
 		cdol_has_succubus_powers_trigger = yes
-		scope:carn_sex_partner = { cdol_has_succubus_powers_trigger = no }
+		scope:cdol_sex_partner = { cdol_has_succubus_powers_trigger = no }
 	}
 
 	immediate = {
@@ -32,7 +32,7 @@ cdol_drain.0001 = {
 
 		set_variable = {
 			name = cdol_recent_succubus_sex_partner
-			value = scope:carn_sex_partner
+			value = scope:cdol_sex_partner
 			days = 30
 		}
 		
@@ -61,7 +61,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain diplomacy
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						diplomacy >= 10
 						NOT = { has_character_flag = cdol_diplomacy_drained }
 					}
@@ -73,7 +73,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain martial
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						martial >= 10
 						NOT = { has_character_flag = cdol_martial_drained }
 					}
@@ -85,7 +85,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain stewardship
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						stewardship >= 10
 						NOT = { has_character_flag = cdol_stewardship_drained }
 					}
@@ -97,7 +97,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain intrigue
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						intrigue >= 10
 						NOT = { has_character_flag = cdol_intrigue_drained }
 					}
@@ -109,7 +109,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain learning
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						learning >= 10
 						NOT = { has_character_flag = cdol_learning_drained }
 					}
@@ -121,7 +121,7 @@ cdol_drain.0001 = {
 			}
 			10 = { # opportunity to drain prowess
 				trigger = {
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						prowess >= 10
 						NOT = { has_character_flag = cdol_prowess_drained }
 					}
@@ -134,7 +134,7 @@ cdol_drain.0001 = {
 			10 = { # opportunity to drain beauty
 				trigger = {
 					NOT = { has_trait = beauty_good_3 }
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						has_trait = beauty_good
 						NOT = { has_character_flag = cdol_beauty_drained }
 					}
@@ -147,34 +147,13 @@ cdol_drain.0001 = {
 			10 = { # opportunity to drain intellect
 				trigger = {
 					NOT = { has_trait = intellect_good_3 }
-					scope:carn_sex_partner = {
+					scope:cdol_sex_partner = {
 						has_trait = intellect_good
 						NOT = { has_character_flag = cdol_intellect_drained }
 					}
 				}
 				trigger_event = {
 					id = cdol_drain.0080
-					days = 1
-				}
-			}
-			10 = { # opportunity to drain dick/tit size
-				trigger = {
-					has_game_rule = carn_dt_enabled
-					carn_has_tits_big_3_trigger = no
-					OR = {
-						carn_should_have_dick_trigger = no
-						carn_has_dick_big_3_trigger = no
-					}
-					scope:carn_sex_partner = {
-						OR = {
-							carn_has_big_tits_trigger = yes
-							carn_has_big_dick_trigger = yes
-						}
-						NOT = { has_character_flag = cdol_dt_drained }
-					}
-				}
-				trigger_event = {
-					id = cdol_drain.0090
 					days = 1
 				}
 			}
@@ -186,24 +165,18 @@ cdol_drain.0001 = {
 			}
 		}
 
-		cdol_on_drain_milk_production_effect = yes
-
-		change_variable = {
-			name = cdol_succubus_mastery_level
-			add = 1
-		}
-
 		send_interface_message = {
 			title = cdol_drain.0001.notification
 			type = cdol_succubus_event_good
 			left_icon = this
-			right_icon = scope:carn_sex_partner
+			right_icon = scope:cdol_sex_partner
 
 			# gain sexual power
 			cdol_gain_sexual_power_effect = {
 				VALUE = cdol_sexual_power_sex_gain_value
 			}
-			add_character_modifier = cdol_succubus_mastery
+
+			cdol_add_one_succubus_trait_xp_level_effect = yes
 			cdol_ability_unlock_tooltip_effect = yes
 
 			if = {
@@ -243,23 +216,23 @@ cdol_drain.0010 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0010.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_diplomacy_drained_modifier
@@ -279,7 +252,7 @@ cdol_drain.0010 = {
 		}
 		add_diplomacy_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -287,12 +260,12 @@ cdol_drain.0010 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -310,7 +283,7 @@ cdol_drain.0011 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -344,23 +317,23 @@ cdol_drain.0020 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0020.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_martial_drained_modifier
@@ -380,7 +353,7 @@ cdol_drain.0020 = {
 		}
 		add_martial_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -388,12 +361,12 @@ cdol_drain.0020 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -411,7 +384,7 @@ cdol_drain.0021 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -445,23 +418,23 @@ cdol_drain.0030 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0030.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_stewardship_drained_modifier
@@ -481,7 +454,7 @@ cdol_drain.0030 = {
 		}
 		add_stewardship_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -489,12 +462,12 @@ cdol_drain.0030 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -512,7 +485,7 @@ cdol_drain.0031 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -546,23 +519,23 @@ cdol_drain.0040 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0040.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_intrigue_drained_modifier
@@ -582,7 +555,7 @@ cdol_drain.0040 = {
 		}
 		add_intrigue_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -590,12 +563,12 @@ cdol_drain.0040 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -613,7 +586,7 @@ cdol_drain.0041 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -647,23 +620,23 @@ cdol_drain.0050 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0050.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_learning_drained_modifier
@@ -683,7 +656,7 @@ cdol_drain.0050 = {
 		}
 		add_learning_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -691,12 +664,12 @@ cdol_drain.0050 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -714,7 +687,7 @@ cdol_drain.0051 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -748,23 +721,23 @@ cdol_drain.0060 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0060.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_prowess_drained_modifier
@@ -784,7 +757,7 @@ cdol_drain.0060 = {
 		}
 		add_prowess_skill = 1
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -792,12 +765,12 @@ cdol_drain.0060 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -815,7 +788,7 @@ cdol_drain.0061 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
@@ -849,25 +822,25 @@ cdol_drain.0070 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0070.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
-				carn_decrease_beauty_one_step_effect = yes
+				cdol_decrease_beauty_one_step_effect = yes
 				add_character_modifier = {
 					modifier = cdol_health_drained_modifier
 					years = 5
@@ -884,9 +857,9 @@ cdol_drain.0070 = {
 		cdol_gain_sexual_power_effect = {
 			VALUE = cdol_sexual_power_drain_extra_gain_value
 		}
-		carn_increase_beauty_one_step_effect = yes
+		cdol_increase_beauty_one_step_effect = yes
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_heavy_suspicion_effect = yes
 	}
@@ -894,12 +867,12 @@ cdol_drain.0070 = {
 	option = { # Don't drain
 		name = cdol_drain.difficult_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -914,13 +887,13 @@ cdol_drain.0071 = {
 	desc = cdol_drain.0071.desc
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = shock
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_stress"
-		carn_decrease_beauty_one_step_effect = yes
+		cdol_decrease_beauty_one_step_effect = yes
 		add_character_modifier = {
 			modifier = cdol_health_drained_modifier
 			years = 5
@@ -949,25 +922,25 @@ cdol_drain.0080 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0080.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
-				carn_decrease_intellect_one_step_effect = yes
+				cdol_decrease_intellect_one_step_effect = yes
 				add_character_modifier = {
 					modifier = cdol_health_drained_modifier
 					years = 5
@@ -984,9 +957,9 @@ cdol_drain.0080 = {
 		cdol_gain_sexual_power_effect = {
 			VALUE = cdol_sexual_power_drain_extra_gain_value
 		}
-		carn_increase_intellect_one_step_effect = yes
+		cdol_increase_intellect_one_step_effect = yes
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -994,12 +967,12 @@ cdol_drain.0080 = {
 	option = { # Don't drain
 		name = cdol_drain.difficult_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -1014,13 +987,13 @@ cdol_drain.0081 = {
 	desc = cdol_drain.0081.desc
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = worry
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_stress"
-		carn_decrease_intellect_one_step_effect = yes
+		cdol_decrease_intellect_one_step_effect = yes
 		add_character_modifier = {
 			modifier = cdol_health_drained_modifier
 			years = 5
@@ -1032,142 +1005,7 @@ cdol_drain.0081 = {
 	}
 }
 
-# 0090. Opportunity to drain dick/tit size
-
-
-cdol_drain.0090 = {
-	type = character_event
-	title = cdol_drain.generic_title
-	desc = {
-		desc = cdol_drain.generic_opening
-		desc = cdol_drain.0090.ending
-	}
-	theme = seduction
-	left_portrait = {
-		character = root
-		animation = personality_zealous
-	}
-	right_portrait = {
-		character = scope:carn_sex_partner
-		animation = ecstasy
-	}
-
-	immediate = {
-		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
-		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
-	}
-	
-	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
-	}
-
-	option = { # Drain
-		name = cdol_drain.0090.a
-		scope:carn_sex_partner = {
-			show_as_tooltip = {
-				if = {
-					limit = { carn_has_big_dick_trigger = yes }
-					carn_decrease_dick_size_one_step_effect = yes
-				}
-				else_if = {
-					limit = { carn_has_big_tits_trigger = yes }
-					carn_decrease_tits_size_one_step_effect = yes
-				}
-				add_character_modifier = {
-					modifier = cdol_health_drained_modifier
-					years = 5
-				}
-			}
-			hidden_effect = {
-				add_character_flag = cdol_dt_drained
-				trigger_event = {
-					id = cdol_drain.0091
-					days = { 20 40 }
-				}
-			}
-		}
-		cdol_gain_sexual_power_effect = {
-			VALUE = cdol_sexual_power_drain_extra_gain_value
-		}
-		if = {
-			limit = {
-				carn_should_have_dick_trigger = yes
-				scope:carn_sex_partner = { carn_has_big_dick_trigger = yes }
-			}
-			carn_increase_dick_size_one_step_effect = yes
-		}
-		else_if = {
-			limit = {
-				scope:carn_sex_partner = { carn_has_big_tits_trigger = yes }
-			}
-			carn_increase_tits_size_one_step_effect = yes
-		}
-		else_if = {
-			limit = {
-				carn_should_have_dick_trigger = yes
-			}
-			carn_increase_dick_size_one_step_effect = yes
-		}
-		else = {
-			carn_increase_tits_size_one_step_effect = yes
-		}
-		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
-		}
-		cdol_add_heavy_suspicion_effect = yes
-	}
-
-	option = { # Don't drain
-		name = cdol_drain.difficult_refusal
-		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
-		}
-	}
-
-	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
-		cdol_stop_reveal_root_succubus_portrait_effect = yes
-	}
-}
-
-#
-# 0091. Your dick/tit size was drained
-#
-
-cdol_drain.0091 = {
-	type = character_event
-	title = cdol_drain.0091.title
-	desc = cdol_drain.0091.desc
-	theme = physical_health
-	left_portrait = {
-		character = scope:carn_sex_partner
-		animation = worry
-	}
-
-	immediate = {
-		play_music_cue = "mx_cue_stress"
-		if = {
-			limit = { carn_has_big_dick_trigger = yes }
-			carn_decrease_dick_size_one_step_effect = yes
-		}
-		else_if = {
-			limit = { carn_has_big_tits_trigger = yes }
-			carn_decrease_tits_size_one_step_effect = yes
-		}
-		add_character_modifier = {
-			modifier = cdol_health_drained_modifier
-			years = 5
-		}
-	}
-
-	option = {
-		name = cdol_drain.0091.a
-	}
-}
-
 # 0100. Opportunity to drain health (generic)
-
 
 cdol_drain.0100 = {
 	type = character_event
@@ -1182,23 +1020,23 @@ cdol_drain.0100 = {
 		animation = personality_zealous
 	}
 	right_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = ecstasy
 	}
 
 	immediate = {
 		play_music_cue = "mx_cue_seduction"
-		carn_make_root_and_sex_partner_naked_for_this_event_effect = yes
+		cdol_make_root_and_sex_partner_naked_for_this_event_effect = yes
 		cdol_reveal_root_succubus_portrait_for_this_event_effect = yes
 	}
 	
 	trigger = {
-		scope:carn_sex_partner = { is_alive = yes }
+		scope:cdol_sex_partner = { is_alive = yes }
 	}
 
 	option = { # Drain
 		name = cdol_drain.0100.a
-		scope:carn_sex_partner = {
+		scope:cdol_sex_partner = {
 			show_as_tooltip = {
 				add_character_modifier = {
 					modifier = cdol_health_drained_modifier
@@ -1216,7 +1054,7 @@ cdol_drain.0100 = {
 			VALUE = cdol_sexual_power_drain_extra_gain_value
 		}
 		cdol_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 		cdol_add_suspicion_effect = yes
 	}
@@ -1224,12 +1062,12 @@ cdol_drain.0100 = {
 	option = { # Don't drain
 		name = cdol_drain.generic_refusal
 		cdol_dont_drain_stress_impact_effect = {
-			VICTIM = scope:carn_sex_partner
+			VICTIM = scope:cdol_sex_partner
 		}
 	}
 
 	after = {
-		carn_make_root_and_sex_partner_no_longer_naked_effect = yes
+		cdol_make_root_and_sex_partner_no_longer_naked_effect = yes
 		cdol_stop_reveal_root_succubus_portrait_effect = yes
 	}
 }
@@ -1247,7 +1085,7 @@ cdol_drain.0101 = {
 	}
 	theme = physical_health
 	left_portrait = {
-		character = scope:carn_sex_partner
+		character = scope:cdol_sex_partner
 		animation = boredom
 	}
 
