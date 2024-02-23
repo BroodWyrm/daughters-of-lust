@@ -28,6 +28,26 @@ CdolMesmerizeFlavor = {
 	text = { localization_key = cdol_mesmerize_flavor_5 }
 }
 
+CdolHypnotizeFlavor = {
+	type = character
+	random_valid = yes
+	text = { localization_key = cdol_hypnotize_flavor_1 }
+	text = { localization_key = cdol_hypnotize_flavor_2 }
+	text = { localization_key = cdol_hypnotize_flavor_3 }
+	text = { localization_key = cdol_hypnotize_flavor_4 }
+	text = { localization_key = cdol_hypnotize_flavor_5 }
+}
+
+CdolSenseSecretsFlavor = {
+	type = character
+	random_valid = yes
+	text = { localization_key = cdol_sense_secrets_flavor_1 }
+	text = { localization_key = cdol_sense_secrets_flavor_2 }
+	text = { localization_key = cdol_sense_secrets_flavor_3 }
+	text = { localization_key = cdol_sense_secrets_flavor_4 }
+	text = { localization_key = cdol_sense_secrets_flavor_5 }
+}
+
 CdolRegenerateFlavor = {
 	type = character
 	random_valid = yes

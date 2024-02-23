@@ -1,16 +1,16 @@
-﻿cdol_mesmerize_interaction = {
+﻿cdol_hypnotize_interaction = {
     category = interaction_category_hostile
 	interface_priority = 9
 
-    desc = cdol_mesmerize_interaction_desc
-    use_diplomatic_range = no
-	cooldown_against_recipient = { years = cdol_mesmerize_cooldown_years }
+    desc = cdol_hypnotize_interaction_desc
+    use_diplomatic_range = yes
+	cooldown_against_recipient = { years = cdol_hypnotize_cooldown_years }
 
     is_shown = {
         scope:actor = {
 		    cdol_has_succubus_powers_trigger = yes
             cdol_has_succubus_mastery_trigger = {
-                VALUE = cdol_mesmerize_succubus_mastery_level
+                VALUE = cdol_hypnotize_succubus_mastery_level
             }
         }
         scope:recipient = {
@@ -22,12 +22,12 @@
         cdol_recent_succubus_sex_partner_is_recipient_trigger = yes
         scope:actor = {
             cdol_has_sexual_power_trigger = {
-                VALUE = cdol_mesmerize_sexual_power_cost
+                VALUE = cdol_hypnotize_sexual_power_cost
             }
 			NOT = {
 				has_hook_of_type = {
 					target = scope:recipient
-					type = favor_hook
+					type = fabrication_hook
 				}
 			}
         }
@@ -37,12 +37,12 @@
         cdol_recent_succubus_sex_partner_is_recipient_trigger = yes
         scope:actor = {
             cdol_has_sexual_power_trigger = {
-                VALUE = cdol_mesmerize_sexual_power_cost
+                VALUE = cdol_hypnotize_sexual_power_cost
             }
 			NOT = {
 				has_hook_of_type = {
 					target = scope:recipient
-					type = favor_hook
+					type = fabrication_hook
 				}
 			}
         }
@@ -51,14 +51,14 @@
     on_accept = {
         scope:actor = {
             cdol_lose_sexual_power_effect = {
-                VALUE = cdol_mesmerize_sexual_power_cost
+                VALUE = cdol_hypnotize_sexual_power_cost
             }
             send_interface_toast = {
-                title = cdol_mesmerize_interaction_notification
+                title = cdol_hypnotize_interaction_notification
                 left_icon = scope:actor
                 right_icon = scope:recipient
                 add_hook_no_toast = {
-                    type = favor_hook
+                    type = fabrication_hook
                     target = scope:recipient
                 }
             }

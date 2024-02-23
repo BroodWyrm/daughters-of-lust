@@ -600,3 +600,35 @@ cdol_ability.0400 = {
 		name = cdol_ability.0400.a
 	}
 }
+
+############################################################################
+# 0500. Hypnotize (recipient)
+############################################################################
+
+cdol_ability.0500 = {
+	type = character_event
+	title = cdol_ability.0500.t
+	desc = cdol_ability.0500.desc
+	theme = seduction
+	
+	left_portrait = {
+		character = scope:actor
+		animation = flirtation
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_seduction"
+		show_as_tooltip = {
+			scope:actor = {
+				add_hook = {
+					type = fabrication_hook
+					target = prev
+				}
+			}
+		}
+	}
+
+	option = {
+		name = cdol_ability.0500.a
+	}
+}

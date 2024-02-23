@@ -223,3 +223,218 @@
 	ai_boldness = very_low_positive_ai_value
 	ai_rationality = very_low_positive_ai_value
 }
+
+cdol_succubus_secret = {
+	lifestyle = yes
+	
+	minimum_age = 16
+
+	intrigue = 1
+	learning = 1
+
+	attraction_opinion = 10
+	seduce_scheme_power_add = 10
+	fame = yes
+
+	same_opinion = 20
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cdol_succubus_desc
+			}
+			desc = trait_cdol_succubus_character_desc
+		}
+	}
+
+	name = {
+		first_valid = {
+			triggered_desc = { # Default name Succubus, to show in brackets
+				trigger = { NOT = { exists = this } }
+				desc = cdol_succubus_cap
+			}
+			triggered_desc = { # Succubus
+				trigger = {
+					cdol_succubus_name_succubus_trigger = yes
+				}
+				desc = cdol_succubus_cap
+			}
+			triggered_desc = { # Yakshi
+				trigger = {
+					cdol_succubus_name_yakshi_trigger = yes
+				}
+				desc = cdol_yakshi_cap
+			}
+			triggered_desc = { # Qarinah
+				trigger = {
+					cdol_succubus_name_qarinah_trigger = yes
+				}
+				desc = cdol_qarinah_cap
+			}
+			triggered_desc = { # Leannán Sídhe
+				trigger = {
+					cdol_succubus_name_leannan_sidhe_trigger = yes
+				}
+				desc = cdol_leannan_sidhe_cap
+			}
+			desc = cdol_demoness_cap # Demoness
+		}
+	}
+
+	tracks = {
+		cdol_succubus = {
+			10 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			20 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}	
+			30 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}	
+			40 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}	
+			50 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			60 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			70 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			80 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			90 = {
+				intrigue = 5
+				learning = 5
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+			100 = {
+				intrigue = 5
+				learning = 5
+
+				# immortal = yes
+				# set_immortal_age = 18
+
+				fertility = 0.5
+				life_expectancy = 20
+				years_of_fertility = 20
+				inbreeding_chance = -0.5
+				negative_random_genetic_chance = -0.5
+				negative_inactive_inheritance_chance = -0.5
+
+				character_travel_speed_mult = 0.05
+				owned_hostile_scheme_success_chance_add = 5
+			}
+		}
+	}
+
+	ai_compassion = very_low_negative_ai_value
+	ai_boldness = very_low_positive_ai_value
+	ai_rationality = very_low_positive_ai_value
+}

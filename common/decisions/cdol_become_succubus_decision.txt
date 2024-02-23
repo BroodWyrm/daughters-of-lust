@@ -41,7 +41,15 @@
 	}
 
 	cost = {
-		gold = { value = cdol_become_succubus_gold_cost }
+		gold = {
+			value = cdol_become_succubus_gold_cost
+		}
+		prestige = {
+			value = cdol_become_succubus_prestige_cost
+		}
+		piety = {
+			value = cdol_become_succubus_piety_cost
+		}
 	}
 	
 	ai_potential = {

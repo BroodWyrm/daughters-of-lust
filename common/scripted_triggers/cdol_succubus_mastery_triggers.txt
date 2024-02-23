@@ -3,18 +3,41 @@
 		text = "cdol_has_succubus_mastery_trigger_text"
 		value = $VALUE$
 
-		has_trait = cdol_succubus
-		has_trait_xp = {
-			trait = cdol_succubus
-			value >= $VALUE$
+		OR = {
+			AND = {
+				has_trait = cdol_succubus
+				has_trait_xp = {
+					trait = cdol_succubus
+					value >= $VALUE$
+				}
+			}
+			AND = {
+				has_trait = cdol_succubus_secret
+				has_trait_xp = {
+					trait = cdol_succubus_secret
+					value >= $VALUE$
+				}
+			}
 		}
+		
 	}
 }
 
 cdol_succubus_mastery_equals_trigger = {
-	has_trait = cdol_succubus
-	has_trait_xp = {
-		trait = cdol_succubus
-		value = $VALUE$
-    }
+	OR = {
+		AND = {
+			has_trait = cdol_succubus
+			has_trait_xp = {
+				trait = cdol_succubus
+				value = $VALUE$
+			}
+		}
+		AND = {
+			has_trait = cdol_succubus_secret
+			has_trait_xp = {
+				trait = cdol_succubus_secret
+				value = $VALUE$
+			}
+		}
+	}
 }

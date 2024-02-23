@@ -1,3 +1,11 @@
+# Daughters of Lust 0.7.0
+
+## Features
+
+* Cleanup
+* Add new Powers: Sense Secrets, Hypnotize
+* Add new Desiction: Perfect Succubus (become immortal)
+
 # Daughters of Lust 0.6.0
 
 ## Features

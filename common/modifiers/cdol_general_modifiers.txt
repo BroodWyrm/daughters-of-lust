@@ -1,0 +1,6 @@
+
+cdol_succubus_perfect_modifier = {
+	icon = fertility_positive
+	immortal = yes
+	set_immortal_age = 18
+}

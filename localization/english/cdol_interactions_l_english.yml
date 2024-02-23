@@ -18,6 +18,14 @@
  cdol_mesmerize_interaction_desc: "Use [cdol_sexual_power|E] to get a [weak_hook|E] on [recipient.GetShortUINameNoTooltip]"
  cdol_mesmerize_interaction_notification: "[actor.Custom2('CdolMesmerizeFlavor', recipient)]"
 
+ cdol_hypnotize_interaction: "Hypnotize"
+ cdol_hypnotize_interaction_desc: "Use [cdol_sexual_power|E] to get a [strong_hook|E] on [recipient.GetShortUINameNoTooltip]"
+ cdol_hypnotize_interaction_notification: "[actor.Custom2('CdolHypnotizeFlavor', recipient)]"
+
+ cdol_sense_secrets_interaction: "Sense Secrets"
+ cdol_sense_secrets_interaction_desc: "Use [cdol_sexual_power|E] to get to know all secrets of [recipient.GetShortUINameNoTooltip]"
+ cdol_sense_secrets_interaction_notification: "[actor.Custom2('CdolSenseSecretsFlavor', recipient)]"
+
  cdol_torment_interaction: "Torment"
  cdol_torment_interaction_desc: "Use [cdol_sexual_power|E] to inflict a massive amount of [stress|E] on [recipient.GetShortUINameNoTooltip]"
  cdol_torment_interaction_notification: "[actor.Custom2('CdolTormentFlavor', recipient)]"
@@ -36,3 +44,4 @@ cdol_turn_into_lover_interaction_notification: "[actor.Custom2('CdolTurnIntoLove
 
  cdol_succubus_conversion_interaction: "[ACTOR.Custom('CdolSuccubusName')|U] Conversion"
  cdol_succubus_conversion_interaction_desc: "Use [cdol_sexual_power|E] to transform [recipient.GetShortUINameNoTooltip] into a [cdol_succubus|E]"
+

@@ -32,8 +32,15 @@ cdol_incite_rivalry_succubus_mastery_level = 40
 cdol_incite_rivalry_sexual_power_cost = 60
 cdol_incite_rivalry_cooldown_years = 1
 
+cdol_hypnotize_succubus_mastery_level = 50
+cdol_hypnotize_sexual_power_cost = 50
+cdol_hypnotize_cooldown_years = 1
+
 cdol_drain_prisoner_succubus_mastery_level = 50
 cdol_drain_prisoner_cooldown_years = 1
+
+cdol_sense_secrets_succubus_mastery_level = 70
+cdol_sense_secrets_sexual_power_cost = 50
 
 cdol_turn_into_lover_succubus_mastery_level = 80
 cdol_turn_into_lover_sexual_power_cost = 60
@@ -45,6 +52,8 @@ cdol_on_drain_milk_production_cap = 550
 cdol_on_ability_milk_production_increase = 50
 cdol_on_ability_milk_production_cap = 550
 
-cdol_become_succubus_gold_cost = 500
+cdol_become_succubus_gold_cost = 100
+cdol_become_succubus_prestige_cost = 200
+cdol_become_succubus_piety_cost = 200
 
 cdol_times_had_sex = 0

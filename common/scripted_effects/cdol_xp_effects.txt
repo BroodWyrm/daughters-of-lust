@@ -1,7 +1,38 @@
 cdol_add_one_succubus_trait_xp_level_effect = {
-	add_trait_xp = {
-		trait = cdol_succubus
-		track = cdol_succubus
-		value = 1
+	if = {
+		limit = {
+			cdol_is_succubus_trigger = yes
+			AND = {
+				NOT = {
+					has_trait = cdol_succubus
+				}
+				NOT = {
+					has_trait = cdol_succubus_secret
+				}
+			}
+		}
+		hidden_effect = {
+			add_trait = cdol_succubus_secret
+		}
+	}
+	if = {
+		limit = {
+			has_trait = cdol_succubus
+		}	
+		add_trait_xp = {
+			trait = cdol_succubus
+			track = cdol_succubus
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			has_trait = cdol_succubus_secret
+		}	
+		add_trait_xp = {
+			trait = cdol_succubus_secret
+			track = cdol_succubus
+			value = 1
+		}
 	}
 }

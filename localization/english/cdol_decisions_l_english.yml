@@ -40,6 +40,11 @@
  cdol_become_succubus_decision_tooltip: "Use the forbidden arts to transform yourself into a [ROOT.Char.Custom('CdolSuccubusNameGameConcept')|U]"
  cdol_become_succubus_decision_confirm: "Begin the ritual"
 
+ cdol_become_perfect_succubus_decision: "Get eternal youth"
+ cdol_become_perfect_succubus_decision_desc: "As the most powerfull [ROOT.Char.Custom('CdolSuccubusName')|U] you are able to infuse your mortal body with the powers of deamon realm. Atleast time cannot influence your body anymore and all influence will be redone."
+ cdol_become_perfect_succubus_decision_tooltip: "Become immortal in a young body for eternity."
+ cdol_become_perfect_succubus_decision_confirm: "For Ever"
+ 
  cdol_become_succubus_gamerule_decision: "Perform [ROOT.Char.Custom('CdolSuccubusName')|U] Transformation Ritual"
  cdol_become_succubus_gamerule_decision_desc: "The legends speak of a race of temptresses who can enchant and manipulate mortals. In my initiation into the mysteries of the universe, I have learned how to transform myself into a full-blooded [ROOT.Char.Custom('CdolSuccubusName')] of legend."
  cdol_become_succubus_gamerule_decision_tooltip: "Use the forbidden arts to transform yourself into a [ROOT.Char.Custom('CdolSuccubusNameGameConcept')|U]"

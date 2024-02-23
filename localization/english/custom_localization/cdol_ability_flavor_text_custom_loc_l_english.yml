@@ -18,6 +18,18 @@ cdol_mesmerize_flavor_3: "A whisper in the dark"
 cdol_mesmerize_flavor_4: "Drunk on your beauty"
 cdol_mesmerize_flavor_5: "Tender, tender heartstrings"
 
+cdol_hypnotize_flavor_1: "[second.GetSheHe] don't know what he does"
+cdol_hypnotize_flavor_2: "Lost in [second.GetHerHis] lust"
+cdol_hypnotize_flavor_3: "[second.GetSheHe] owes you everything"
+cdol_hypnotize_flavor_4: "Puppet of your will"
+cdol_hypnotize_flavor_5: "Hold under a spell"
+
+cdol_sense_secrets_flavor_1: "[second.GetSheHe] tells me everything"
+cdol_sense_secrets_flavor_2: "[second.GetHerHis] secrets are not longer hidden"
+cdol_sense_secrets_flavor_3: "Naked before my eyes"
+cdol_sense_secrets_flavor_4: "[second.GetSheHe] talks too much"
+cdol_sense_secrets_flavor_5: "[second.GetSheHe] is like a open book"
+
 cdol_regenerate_flavor_1: "A new day, a new self"
 cdol_regenerate_flavor_2: "Reborn in the dark"
 cdol_regenerate_flavor_3: "Remade for pleasure"

@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ cdol_succubus_perfect_modifier: "Succubus Perfection"
+ cdol_succubus_perfect_modifier_desc: "Becoming a immortal being."
+
  cdol_succubus_mastery: "Succubus Mastery"
  cdol_succubus_mastery_desc: "Bonuses per [cdol_succubus_mastery_level|E]:"
 
